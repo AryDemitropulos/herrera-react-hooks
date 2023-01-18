@@ -3,7 +3,7 @@ import { useCounter } from '../hooks';
 import { Small } from './Small';
 
 export const Memorize = () => {
-  const { counter, add } = useCounter(0);
+  const { counter, increment } = useCounter(0);
   const [show, setShow] = useState(true);
   return (
     <>
@@ -11,7 +11,7 @@ export const Memorize = () => {
         Counter: <Small value={counter}></Small>
       </h1>
       <hr />
-      <button onClick={() => add(1)} className='btn btn-primary mt-4'>
+      <button onClick={() => increment(1)} className='btn btn-primary mt-4'>
         +1
       </button>
       <button onClick={() => setShow(!show)} className='btn btn-primary mt-4'>

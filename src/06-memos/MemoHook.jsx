@@ -11,13 +11,13 @@ const heavyStuff = (itaration = 100) => {
 };
 
 export const MemoHook = () => {
-  const { counter, add } = useCounter(400);
+  const { counter, increment } = useCounter(400);
   const [show, setShow] = useState(true);
-  const memorizedValue = useMemo(() => heavyStuff(counter),[counter]);
+  const memorizedValue = useMemo(() => heavyStuff(counter), [counter]);
   useEffect(() => {
-    heavyStuff(counter)
-  }, [counter])
-  
+    heavyStuff(counter);
+  }, [counter]);
+
   return (
     <>
       <h1>
@@ -25,7 +25,7 @@ export const MemoHook = () => {
       </h1>
       <hr />
       <h4>{memorizedValue}</h4>
-      <button onClick={() => add(1)} className='btn btn-primary mt-4'>
+      <button onClick={() => increment(1)} className='btn btn-primary mt-4'>
         +1
       </button>
       <button onClick={() => setShow(!show)} className='btn btn-primary mt-4'>
