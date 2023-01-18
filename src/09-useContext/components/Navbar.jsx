@@ -19,6 +19,9 @@ export const Navbar = () => {
             <NavLink className={setActive} to='/login'>
               Login
             </NavLink>
+            <NavLink className={setActive} to='/cart'>
+              Cart
+            </NavLink>
           </ul>
         </div>
       </div>
