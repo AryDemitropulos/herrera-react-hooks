@@ -18,13 +18,13 @@ export const MultipleCustomHooks = () => {
       <h1>Pokemons</h1>
       <hr />
       {isLoading ? <Loading /> : <PokemonInfo {...pokemon} />}
-      <div
+      <button
         className='btn btn-primary mt-4'
         onClick={() => increment(1)}
         disabled={isLoading}
       >
-        Proximo Pokemon
-      </div>
+        Próximo Pokemon
+      </button>
     </>
   );
 

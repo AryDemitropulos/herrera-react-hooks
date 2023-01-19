@@ -22,6 +22,9 @@ export const Navbar = () => {
             <NavLink className={setActive} to='/cart'>
               Cart
             </NavLink>
+            <NavLink className={setActive} to='/pokemons'>
+              Pokemons
+            </NavLink>
           </ul>
         </div>
       </div>
