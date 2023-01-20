@@ -11,6 +11,7 @@ export const TodoItem = ({ id, description, done, onDeleteTodo, onToggle }) => {
         className={`align-self-center ${
           done ? 'text-decoration-line-through' : ''
         } `}
+        aria-label='span'
       >
         {description}
       </span>
@@ -25,5 +26,7 @@ export const TodoItem = ({ id, description, done, onDeleteTodo, onToggle }) => {
 TodoItem.proptypes = {
   id: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
+  done: Proptypes.bool.isRequired,
   onDeleteTodo: Proptypes.func.isRequired,
+  onToggle: Proptypes.func.isRequired,
 };
