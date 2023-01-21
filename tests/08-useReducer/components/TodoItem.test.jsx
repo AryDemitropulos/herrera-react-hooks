@@ -12,7 +12,7 @@ describe('Pruebas sobre el <TodoItem/>', () => {
     onToggle: onToggleTodoMock,
   };
 
-  //TODO: JEST: Si sabes que vas a llamar a funciones mock => tengo que limpiar todos los mocks
+  //TODO: JEST: Probar funciones: Si sabes que vas a llamar a funciones mock => tengo que limpiar todos los mocks
   beforeEach(() => jest.clearAllMocks());
 
   test('debe de mostrar el Todo pendiente de completar', () => {

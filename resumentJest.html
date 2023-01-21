@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jest&colon;</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="jest">Jest:</h1>
+<h2 id="pruebas-sobre-componentes-jsx">Pruebas sobre componentes jsx:</h2>
+<ul>
+<li>
+<p>Probar renderizado inicial (usar screen.debug para ayudarse)</p>
+</li>
+<li>
+<p>Probar renderizado con state cambiados (cuando recibe un user, cuando loading: false, etc)</p>
+</li>
+<li>
+<p>Probar llamadas de eventos, clicks y asegurarse de que se llamen a las funciones con los parametros esperados</p>
+</li>
+<li>
+<p>NO PROBAR SI LOS EVENTOS LLAMADOS FUNCIONAN o hicieron lo que se esperaba (Cuando son responsabilidad de un componente padre, o un Context)
+Si la funcionalidad del metodo es ajeno al componente que estoy probando, no es responsabilidad del componente asegurarse que funcione, eso debe hacerlo el componente que define al metodo a llamar</p>
+<pre><code>... Completar
+
+
+Pruebas sobre Routers
+    # Probar que los componentes se muestren cuando deben mostrarse (No hace falta probar funcionamiento, de eso se encargan los test del componente en si)
+</code></pre>
+</li>
+</ul>
+
+        
+        
+    </body>
+    </html>
