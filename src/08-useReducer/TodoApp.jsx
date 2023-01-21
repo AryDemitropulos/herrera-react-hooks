@@ -14,7 +14,7 @@ export const TodoApp = () => {
   return (
     <>
       <h1>
-        TODO App ({todosCount}), pendientes: {pendingTodosCount}{' '}
+        TODO App ({todosCount}), pendientes: {pendingTodosCount}
       </h1>
       <hr />
       <div className='row'>
