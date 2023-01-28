@@ -4,7 +4,6 @@ import { HomePage } from '../../../src/09-useContext/pages';
 
 describe('Pruebas en <HomePage/>', () => {
   test('debe de mostrar el componente sin el usuario', () => {
-    //TODO: JEST: Context: Para probar sobre componentes que usan useContext tengo que poner el Context.Provider (con su value) como argumento del metodo render
     render(
       <UserContext.Provider value={{ user: null }}>
         <HomePage />

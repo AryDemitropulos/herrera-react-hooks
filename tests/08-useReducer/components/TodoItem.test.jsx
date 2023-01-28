@@ -12,7 +12,6 @@ describe('Pruebas sobre el <TodoItem/>', () => {
     onToggle: onToggleTodoMock,
   };
 
-  //TODO: JEST: Probar funciones: Si sabes que vas a llamar a funciones mock => tengo que limpiar todos los mocks
   beforeEach(() => jest.clearAllMocks());
 
   test('debe de mostrar el Todo pendiente de completar', () => {
@@ -53,10 +52,8 @@ describe('Pruebas sobre el <TodoItem/>', () => {
     render(<TodoItem {...props} />);
 
     const spanElement = screen.getByLabelText('span');
-    //TODO: JEST: Probar Funciones: Disparar eventos: fireEvent.[EVENTO]([ELEMENTO])
     fireEvent.click(spanElement);
 
-    //TODO: JEST: Probar Funciones: probar llamada de funcion con argumentos usando toHaveBeenCalledWith
     expect(onToggleTodoMock).toHaveBeenCalledWith(todo.id);
   });
 
