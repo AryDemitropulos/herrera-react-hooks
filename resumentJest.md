@@ -125,6 +125,14 @@
           increment: mockIncrement,
         });
 
+- Tambien podemos usar mockResolvedValue para mockear respuestas de funciones
+
+        ...
+        jest.mock('../../../src/firebase/providers');
+        ...
+        const loginData = { ok: true, user: demoUser };
+        await signInWithGoogle.mockResolvedValue(loginData);
+
 ## requireActual
 
 - En el caso de querer mockear un hook de una libreria, pero tener el comportamiento real de otros hooks de la misma libraria, usar jest.mock con el segundo parametro, que es un callback con las respuestas de la libreria.
